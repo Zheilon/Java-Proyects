@@ -18,6 +18,5 @@ public class Run extends Application {
 
     public static void main(String[] args) {
         launch();
-        System.out.println("Is ready!");
     }
 }
