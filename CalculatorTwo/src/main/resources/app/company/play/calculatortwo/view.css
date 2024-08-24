@@ -1,0 +1,56 @@
+/*------------------ Button's* ------------------*/
+.button-attributes {
+    -fx-font-size: 20px;
+    -fx-font-family: "Arial Rounded MT Bold";
+}
+
+.button-square {
+    -fx-pref-width: 100px;
+    -fx-pref-height: 100px;
+
+}
+
+.button-rectangle {
+    -fx-pref-width: 100px;
+    -fx-pref-height: 150px;
+}
+
+.button-outside {
+    -fx-background-color: rgba(125, 60, 152, 0.3);
+}
+
+.button-outside:hover {
+    -fx-background-color: rgba(203, 67, 53, 0.3);
+    -fx-text-fill: rgba(203, 67, 53, 1);
+    -fx-effect: dropshadow(gaussian, rgba(203, 67, 53, 0.1), 25, 0.9, 0, 0);
+}
+
+.button-inside {
+    -fx-background-color: rgba(203, 67, 53, 0.3);
+}
+
+.button-inside:hover {
+    -fx-background-color: rgba(125, 60, 152, 0.3);
+    -fx-text-fill: rgba(125, 60, 152, 1);
+    -fx-effect: dropshadow(gaussian, rgba(125, 60, 152, 0.1), 25, 0.9, 0, 0);
+}
+
+/*------------------ VBox's* ------------------*/
+.vBox {
+    -fx-pref-width: 80px;
+    -fx-spacing: 9px;
+}
+
+/*------------------ HBox's* ------------------*/
+.hBox {
+    -fx-background-color: rgba(250, 219, 216, 1);
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+}
+
+/*------------------ AnchorPane's* ------------------*/
+.anchor-pane {
+    -fx-background-radius: 20px;
+    -fx-border-radius: 20px;
+    -fx-background-color: rgba(214, 234, 248, 0.9);
+}
