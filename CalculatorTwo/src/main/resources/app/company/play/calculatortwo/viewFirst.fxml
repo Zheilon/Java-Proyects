@@ -1,16 +1,147 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.geometry.Insets?>
-<?import javafx.scene.control.Label?>
+<?import java.lang.String?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.VBox?>
 
-<?import javafx.scene.control.Button?>
-<VBox alignment="CENTER" spacing="20.0" xmlns:fx="http://javafx.com/fxml"
-      fx:controller="app.company.play.calculatortwo.ControllerFirst">
-    <padding>
-        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0"/>
-    </padding>
 
-    <Label fx:id="welcomeText"/>
-    <Button text="Hello!" onAction="#onHelloButtonClick"/>
-</VBox>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="536.0" prefWidth="379.0" styleClass="anchor-pane" stylesheets="@view.css" xmlns="http://javafx.com/javafx/22" xmlns:fx="http://javafx.com/fxml/1" fx:controller="app.company.play.calculatortwo.ControllerFirst">
+   <children>
+      <HBox layoutX="15.2" layoutY="36.0" prefHeight="103.0" prefWidth="349.0" styleClass="hBox" stylesheets="@view.css" AnchorPane.leftAnchor="15.0" AnchorPane.rightAnchor="15.0" AnchorPane.topAnchor="36.0" />
+      <VBox layoutX="284.0" layoutY="150.0" prefHeight="370.0" prefWidth="78.0" styleClass="vBox" stylesheets="@view.css">
+         <children>
+            <Button mnemonicParsing="false" prefHeight="75.0" prefWidth="78.0" stylesheets="@view.css" text="-">
+               <styleClass>
+                  <String fx:value="button-attributes" />
+                  <String fx:value="button-outside" />
+               </styleClass>
+            </Button>
+            <Button mnemonicParsing="false" stylesheets="@view.css" text="+">
+               <styleClass>
+                  <String fx:value="button-attributes" />
+                  <String fx:value="button-rectangle" />
+                  <String fx:value="button-outside" />
+               </styleClass>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="77.0" prefWidth="78.0" stylesheets="@view.css" text="=">
+               <styleClass>
+                  <String fx:value="button-attributes" />
+                  <String fx:value="button-rectangle" />
+                  <String fx:value="button-outside" />
+               </styleClass>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="194.0" layoutY="150.0" prefHeight="370.0" prefWidth="78.0" styleClass="vBox" stylesheets="@view.css">
+         <children>
+            <Button mnemonicParsing="false" stylesheets="@view.css" text="*">
+               <styleClass>
+                  <String fx:value="button-square" />
+                  <String fx:value="button-attributes" />
+                  <String fx:value="button-outside" />
+               </styleClass>
+            </Button>
+            <Button mnemonicParsing="false" stylesheets="@view.css" text="9">
+               <styleClass>
+                  <String fx:value="button-square" />
+                  <String fx:value="button-attributes" />
+                  <String fx:value="button-inside" />
+               </styleClass>
+            </Button>
+            <Button mnemonicParsing="false" stylesheets="@view.css" text="6">
+               <styleClass>
+                  <String fx:value="button-square" />
+                  <String fx:value="button-attributes" />
+                  <String fx:value="button-inside" />
+               </styleClass>
+            </Button>
+            <Button mnemonicParsing="false" prefHeight="234.0" prefWidth="80.0" stylesheets="@view.css" text="3">
+               <styleClass>
+                  <String fx:value="button-square" />
+                  <String fx:value="button-attributes" />
+                  <String fx:value="button-inside" />
+               </styleClass>
+            </Button>
+            <Button mnemonicParsing="false" stylesheets="@view.css" text=".">
+               <styleClass>
+                  <String fx:value="button-square" />
+                  <String fx:value="button-attributes" />
+                  <String fx:value="button-inside" />
+               </styleClass>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="105.0" layoutY="150.0" prefHeight="290.0" prefWidth="78.0" styleClass="vBox" stylesheets="@view.css">
+         <children>
+            <Button mnemonicParsing="false" stylesheets="@view.css" text="/">
+               <styleClass>
+                  <String fx:value="button-square" />
+                  <String fx:value="button-attributes" />
+                  <String fx:value="button-outside" />
+               </styleClass>
+            </Button>
+            <Button mnemonicParsing="false" stylesheets="@view.css" text="8">
+               <styleClass>
+                  <String fx:value="button-square" />
+                  <String fx:value="button-attributes" />
+                  <String fx:value="button-inside" />
+               </styleClass>
+            </Button>
+            <Button mnemonicParsing="false" stylesheets="@view.css" text="5">
+               <styleClass>
+                  <String fx:value="button-square" />
+                  <String fx:value="button-attributes" />
+                  <String fx:value="button-inside" />
+               </styleClass>
+            </Button>
+            <Button mnemonicParsing="false" stylesheets="@view.css" text="2">
+               <styleClass>
+                  <String fx:value="button-square" />
+                  <String fx:value="button-attributes" />
+                  <String fx:value="button-inside" />
+               </styleClass>
+            </Button>
+         </children>
+      </VBox>
+      <VBox layoutX="15.0" layoutY="150.0" prefHeight="290.0" prefWidth="78.0" styleClass="vBox" stylesheets="@view.css">
+         <children>
+            <Button mnemonicParsing="false" stylesheets="@view.css" text="C">
+               <styleClass>
+                  <String fx:value="button-square" />
+                  <String fx:value="button-attributes" />
+                  <String fx:value="button-outside" />
+               </styleClass>
+            </Button>
+            <Button mnemonicParsing="false" stylesheets="@view.css" text="7">
+               <styleClass>
+                  <String fx:value="button-square" />
+                  <String fx:value="button-attributes" />
+                  <String fx:value="button-inside" />
+               </styleClass>
+            </Button>
+            <Button mnemonicParsing="false" stylesheets="@view.css" text="4">
+               <styleClass>
+                  <String fx:value="button-square" />
+                  <String fx:value="button-attributes" />
+                  <String fx:value="button-inside" />
+               </styleClass>
+            </Button>
+            <Button mnemonicParsing="false" stylesheets="@view.css" text="1">
+               <styleClass>
+                  <String fx:value="button-square" />
+                  <String fx:value="button-attributes" />
+                  <String fx:value="button-inside" />
+               </styleClass>
+            </Button>
+         </children>
+      </VBox>
+      <Button layoutX="15.0" layoutY="450.0" mnemonicParsing="false" prefHeight="71.0" prefWidth="169.0" stylesheets="@view.css" text="0">
+         <styleClass>
+            <String fx:value="button-attributes" />
+            <String fx:value="button-inside" />
+         </styleClass>
+      </Button>
+   </children>
+</AnchorPane>
