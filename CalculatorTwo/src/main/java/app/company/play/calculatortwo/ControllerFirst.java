@@ -89,9 +89,7 @@ public class ControllerFirst implements Initializable {
     @FXML
     void dotButton(MouseEvent event)
     {
-        if (!textUp.getText().isEmpty()) {
-            textUp.setStyle("-fx-background-color: rgba(230, 176, 170, 0.5);");
-        }
+        LogicView.labelColor(textUp);
 
         if (!textDown.getText().contains(".")) {
             textUp.setText(textUp.getText() + ".");
@@ -109,9 +107,7 @@ public class ControllerFirst implements Initializable {
 
     @FXML
     private void zeroButton() {
-        if (!textUp.getText().isEmpty()) {
-            textUp.setStyle("-fx-background-color: rgba(230, 176, 170, 0.5);");
-        }
+        LogicView.labelColor(textUp);
 
         textUp.setText(textUp.getText() + "0");
         textDown.setText(textDown.getText() + "0");
@@ -120,9 +116,7 @@ public class ControllerFirst implements Initializable {
     @FXML
     private void oneButton(MouseEvent event)
     {
-        if (!textUp.getText().isEmpty()) {
-            textUp.setStyle("-fx-background-color: rgba(230, 176, 170, 0.5);");
-        }
+        LogicView.labelColor(textUp);
 
         textUp.setText(textUp.getText() + "1");
         textDown.setText(textDown.getText() + "1");
@@ -131,9 +125,7 @@ public class ControllerFirst implements Initializable {
     @FXML
     private void twoButton(MouseEvent event)
     {
-        if (!textUp.getText().isEmpty()) {
-            textUp.setStyle("-fx-background-color: rgba(230, 176, 170, 0.5);");
-        }
+        LogicView.labelColor(textUp);
 
         textUp.setText(textUp.getText() + "2");
         textDown.setText(textDown.getText() + "2");
@@ -142,9 +134,7 @@ public class ControllerFirst implements Initializable {
     @FXML
     private void threeButton(MouseEvent event)
     {
-        if (!textUp.getText().isEmpty()) {
-            textUp.setStyle("-fx-background-color: rgba(230, 176, 170, 0.5);");
-        }
+        LogicView.labelColor(textUp);
 
         textUp.setText(textUp.getText() + "3");
         textDown.setText(textDown.getText() + "3");
@@ -153,9 +143,7 @@ public class ControllerFirst implements Initializable {
     @FXML
     private void fourButton(MouseEvent event)
     {
-        if (!textUp.getText().isEmpty()) {
-            textUp.setStyle("-fx-background-color: rgba(230, 176, 170, 0.5);");
-        }
+        LogicView.labelColor(textUp);
 
         textUp.setText(textUp.getText() + "4");
         textDown.setText(textDown.getText() + "4");
@@ -164,9 +152,7 @@ public class ControllerFirst implements Initializable {
     @FXML
     private void fiveButton(MouseEvent event)
     {
-        if (!textUp.getText().isEmpty()) {
-            textUp.setStyle("-fx-background-color: rgba(230, 176, 170, 0.5);");
-        }
+        LogicView.labelColor(textUp);
 
         textUp.setText(textUp.getText() + "5");
         textDown.setText(textDown.getText() + "5");
@@ -175,9 +161,7 @@ public class ControllerFirst implements Initializable {
     @FXML
     private void sixButton(MouseEvent event)
     {
-        if (!textUp.getText().isEmpty()) {
-            textUp.setStyle("-fx-background-color: rgba(230, 176, 170, 0.5);");
-        }
+        LogicView.labelColor(textUp);
 
         textUp.setText(textUp.getText() + "6");
         textDown.setText(textDown.getText() + "6");
