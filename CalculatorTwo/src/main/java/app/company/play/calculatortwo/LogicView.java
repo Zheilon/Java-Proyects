@@ -3,11 +3,10 @@ import javafx.scene.control.Label;
 
 public class LogicView {
 
-    public static Label labelColor(Label l)
+    public static void labelColor(Label l)
     {
-        if (!l.getText().isEmpty()) {
+        if (l.getText().isEmpty()) {
             l.setStyle("-fx-background-color: rgba(230, 176, 170, 0.5);");
         }
-        return l;
     }
 }
