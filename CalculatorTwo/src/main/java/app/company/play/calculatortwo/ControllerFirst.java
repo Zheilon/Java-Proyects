@@ -3,7 +3,10 @@ import javafx.fxml.FXML;
 import javafx.fxml.Initializable;
 import javafx.scene.control.Button;
 import javafx.scene.control.Label;
+import javafx.scene.input.KeyCode;
+import javafx.scene.input.MouseButton;
 import javafx.scene.input.MouseEvent;
+import javafx.stage.Stage;
 
 import java.net.URL;
 import java.util.ArrayList;
@@ -19,15 +22,20 @@ public class ControllerFirst implements Initializable {
                 one, two, three, four, five, six, seven, eight,
                 nine, deleteAll, division, per, rest, sum, equal, dot));
 
-        List<Button> listButtonNumbs = new ArrayList<>(List.of(zero,
-                one, two, three, four, five, six, seven, eight,
-                nine));
-
         for (Button z : listButtonAll) {
             z.setOnMouseEntered(InteractController.cursorHandShow(z).getOnMouseEntered());
         }
 
+        zero.setOnKeyPressed(key -> {
+            if (key.getCode() == KeyCode.DIGIT0) {
+                zeroAlter();
+            }
+        });
+
     }
+
+    private Stage stage;
+    public void setStage(Stage stage) { this.stage = stage; }
 
     @FXML
     private Label textUp;
@@ -106,9 +114,16 @@ public class ControllerFirst implements Initializable {
     }
 
     @FXML
-    private void zeroButton() {
+    private void zeroButton()
+    {
         LogicView.labelColor(textUp);
+        textUp.setText(textUp.getText() + "0");
+        textDown.setText(textDown.getText() + "0");
+    }
 
+    private void zeroAlter()
+    {
+        LogicView.labelColor(textUp);
         textUp.setText(textUp.getText() + "0");
         textDown.setText(textDown.getText() + "0");
     }
@@ -117,7 +132,6 @@ public class ControllerFirst implements Initializable {
     private void oneButton(MouseEvent event)
     {
         LogicView.labelColor(textUp);
-
         textUp.setText(textUp.getText() + "1");
         textDown.setText(textDown.getText() + "1");
     }
@@ -126,7 +140,6 @@ public class ControllerFirst implements Initializable {
     private void twoButton(MouseEvent event)
     {
         LogicView.labelColor(textUp);
-
         textUp.setText(textUp.getText() + "2");
         textDown.setText(textDown.getText() + "2");
     }
@@ -135,7 +148,6 @@ public class ControllerFirst implements Initializable {
     private void threeButton(MouseEvent event)
     {
         LogicView.labelColor(textUp);
-
         textUp.setText(textUp.getText() + "3");
         textDown.setText(textDown.getText() + "3");
     }
@@ -144,7 +156,6 @@ public class ControllerFirst implements Initializable {
     private void fourButton(MouseEvent event)
     {
         LogicView.labelColor(textUp);
-
         textUp.setText(textUp.getText() + "4");
         textDown.setText(textDown.getText() + "4");
     }
@@ -153,7 +164,6 @@ public class ControllerFirst implements Initializable {
     private void fiveButton(MouseEvent event)
     {
         LogicView.labelColor(textUp);
-
         textUp.setText(textUp.getText() + "5");
         textDown.setText(textDown.getText() + "5");
     }
@@ -162,9 +172,33 @@ public class ControllerFirst implements Initializable {
     private void sixButton(MouseEvent event)
     {
         LogicView.labelColor(textUp);
-
         textUp.setText(textUp.getText() + "6");
         textDown.setText(textDown.getText() + "6");
+    }
+
+    @FXML
+    private void sevenButton(MouseEvent event)
+    {
+        LogicView.labelColor(textUp);
+        textUp.setText(textUp.getText() + "7");
+        textDown.setText(textDown.getText() + "7");
+    }
+
+    @FXML
+    private void eightButton(MouseEvent event)
+    {
+        LogicView.labelColor(textUp);
+        textUp.setText(textUp.getText() + "8");
+        textDown.setText(textDown.getText() + "8");
+    }
+
+
+    @FXML
+    private void nineButton(MouseEvent event)
+    {
+        LogicView.labelColor(textUp);
+        textUp.setText(textUp.getText() + "9");
+        textDown.setText(textDown.getText() + "9");
     }
 
 
