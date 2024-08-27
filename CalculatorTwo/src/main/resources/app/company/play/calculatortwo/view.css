@@ -54,6 +54,7 @@
 }
 
 .label-down {
+    -fx-background-color: rgba(250, 219, 216, 1);
     -fx-font-size: 30px;
     -fx-font-family: "Arial Rounded MT Bold";
     -fx-alignment: CENTER-RIGHT;
